@@ -1,0 +1,109 @@
+{
+  "system": {
+    "name": "AgroFlow Pro",
+    "version": "1.0.0",
+    "environment": "production",
+    "timezone": "Asia/Kolkata"
+  },
+  "hardware": {
+    "microcontroller": "ESP32",
+    "solar_power": "20W",
+    "battery_capacity": "48V (4x18650)",
+    "sensors": {
+      "soil_moisture": true,
+      "rain_detection": true,
+      "water_level": true,
+      "temperature_humidity": true
+    }
+  },
+  "wifi": {
+    "ssid": "YOUR_SSID",
+    "password": "YOUR_PASSWORD",
+    "timeout": 30,
+    "reconnect_interval": 60
+  },
+  "mqtt": {
+    "broker": "mqtt.example.com",
+    "port": 1883,
+    "username": "agroflow",
+    "password": "secure_password",
+    "topics": {
+      "data": "agroflow/data",
+      "command": "agroflow/command",
+      "status": "agroflow/status",
+      "alerts": "agroflow/alerts"
+    }
+  },
+  "bluetooth": {
+    "enabled": true,
+    "device_name": "AgroFlow_Pro",
+    "fallback_mode": true
+  },
+  "irrigation": {
+    "soil_moisture_dry": 1800,
+    "soil_moisture_wet": 700,
+    "moisture_threshold_low": 35,
+    "moisture_threshold_high": 80,
+    "pump_control": {
+      "relay_pin": 25,
+      "solenoid_pin": 26
+    }
+  },
+  "alerts": {
+    "water_tank_min": 200,
+    "battery_min_voltage": 10.5,
+    "rain_detection": true,
+    "sms_enabled": false,
+    "phone_number": "+91XXXXXXXXXX"
+  },
+  "display": {
+    "type": "LCD 16x2 I2C",
+    "i2c_address": "0x27",
+    "refresh_interval": 2000
+  },
+  "database": {
+    "type": "PostgreSQL",
+    "host": "localhost",
+    "port": 5432,
+    "database": "agroflow",
+    "username": "agroflow_user",
+    "password": "secure_password"
+  },
+  "api": {
+    "host": "0.0.0.0",
+    "port": 5000,
+    "debug": false,
+    "cors_origins": ["*"]
+  },
+  "cloud_services": {
+    "aws_enabled": false,
+    "aws_region": "ap-south-1",
+    "google_cloud_enabled": false,
+    "project_id": "agroflow-pro"
+  },
+  "data_logging": {
+    "local_storage": true,
+    "cloud_sync": true,
+    "sync_interval": 300,
+    "data_retention_days": 365
+  },
+  "features": {
+    "voice_assistant": true,
+    "mobile_app": true,
+    "web_dashboard": true,
+    "offline_mode": true,
+    "carbon_tracking": true,
+    "water_savings_analytics": true
+  },
+  "security": {
+    "ssl_enabled": true,
+    "api_key_required": true,
+    "password_min_length": 12,
+    "session_timeout": 3600
+  },
+  "maintenance": {
+    "firmware_update_interval": 604800,
+    "sensor_calibration_interval": 2592000,
+    "log_cleanup_interval": 86400
+  }
+}
