@@ -49,44 +49,6 @@ A smart, self-powered irrigation controller featuring:
 - ⚠️ **Alert System**: SMS & push notifications for critical events
 - 🔌 **Pump Control**: Automatic on/off based on soil moisture levels
 
----
-
-## 🏗️ Project Structure
-
-```
-agroflow-pro/
-├── firmware/                  # ESP32 Arduino code
-│   ├── main/
-│   ├── sensors/
-│   ├── communication/
-│   └── solar_management/
-├── hardware/                  # Circuit diagrams & specifications
-│   ├── schematics/
-│   ├── PCB_design/
-│   └── BOM.md
-├── sensors/                   # Sensor drivers & calibration
-│   ├── soil_moisture/
-│   ├── rain_sensor/
-│   ├── temperature/
-│   └── water_level/
-├── dashboard/                 # Web/Mobile interface
-│   ├── frontend/
-│   └── backend/
-├── database/                  # Data storage & schemas
-│   ├── schemas/
-│   └── migrations/
-├── docs/                      # Project documentation
-│   ├── PROJECT_REPORT.md
-│   ├── SETUP_GUIDE.md
-│   ├── API_DOCUMENTATION.md
-│   └── USER_MANUAL.md
-├── tests/                     # Unit & integration tests
-├── requirements.txt           # Python dependencies
-└── config.json               # Configuration settings
-```
-
----
-
 ## 📦 Hardware Components (₹5000 Budget)
 
 | Component | Qty | Cost (₹) | Notes |
